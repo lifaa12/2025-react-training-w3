@@ -1,0 +1,17 @@
+@import "bootstrap/scss/bootstrap";
+
+.img-wrap {
+  height: 500px;
+}
+.product-sm-img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform ease 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.zx-99 {
+  z-index: 99;
+}
