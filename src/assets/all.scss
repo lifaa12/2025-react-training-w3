@@ -1,7 +1,8 @@
 @import "bootstrap/scss/bootstrap";
 
 .img-wrap {
-  height: 500px;
+  height: 600px;
+  object-fit: cover;
 }
 .product-sm-img {
   width: 100px;
