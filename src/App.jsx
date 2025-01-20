@@ -265,7 +265,10 @@ function App() {
                           <button type="button" className="btn btn-info me-3" onClick={() => { setProductDetail(item), setProductImgUrl(item.imageUrl), detailModalOpen() }}>詳細資訊</button>
                           <button type="button" className="btn btn-primary me-3" onClick={() => {
                             setMode("edit");
-                            setProductValue(item);
+                            setProductValue({
+                              ...item,
+                              imagesUrl: item.imagesUrl || []
+                            });
                             productEditModalOpen();
                           }}>編輯</button>
                           <button type="button" className="btn btn-danger" onClick={() => productDelete(item.id)} >刪除</button>
